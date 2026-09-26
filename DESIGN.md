@@ -1,124 +1,129 @@
-# Ziyong Liu - Personal Homepage Design Document
+# Ziyong Liu's Personal Homepage - Design Document
 
 - **Author:** Ziyong Liu
 - **Class:**
   [CS5610 Web Development, Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
-- **Planned website:**
+- **Website:**
   [Ziyong Liu's Personal Homepage](https://j0shual19.github.io/CS5610-Personal_Home_Page/)
 
 ## Project Description
 
-This project is a personal homepage for Ziyong Liu, a fourth-semester Align MS in
-Computer Science student at Northeastern University's Silicon Valley campus. The site
-introduces his background, selected projects, technical skills, interests, and contact
-information.
+For this project, I am creating a personal homepage about myself. I am a fourth-semester
+Align MS in Computer Science student at Northeastern University's Silicon Valley campus.
+I want the website to give visitors a quick introduction to my background, interests,
+projects, technical skills, and contact information.
 
-The website has three pages:
+I decided to use three pages so that the information is easy to find without putting
+everything on one long page:
 
-- **Home (`index.html`)** - A personal introduction, background, interests, and selected
-  software projects.
-- **Skills (`skills.html`)** - Technical skills from the author's résumé, with an
-  original JavaScript category filter.
-- **Contact (`contact.html`)** - Public contact methods and an explanation of how AI
-  assisted with the page.
+- **Home (`index.html`)** introduces me and shows three projects from my résumé.
+- **Skills (`skills.html`)** lists my technical skills and includes a JavaScript filter.
+- **Contact (`contact.html`)** gives visitors ways to contact me and is the third,
+  AI-generated page required by the assignment.
 
-The site uses semantic HTML5, CSS Grid and Flexbox, and vanilla JavaScript ES6 modules.
-It does not use a backend, jQuery, Bootstrap, or live AI calls.
+I am building the site with semantic HTML5, CSS Grid, Flexbox, and vanilla JavaScript
+ES6 modules. I am not using a backend, jQuery, Bootstrap, or a component framework.
 
-## Target Customers
+## Target Audience
 
-The main visitors are instructors evaluating the assignment, classmates who want to
-learn about Ziyong's background, and recruiters or collaborators who want a quick view
-of his projects and skills.
+The main audience for this website is my professor and classmates because this is a
+class project. The site may also be useful for recruiters or other students who want to
+learn about my projects and technical skills.
+
+I want the pages to be easy to understand for visitors who may only spend a short time
+looking through the site. The navigation stays the same on every page, and the layout
+changes to one column on smaller screens.
 
 ## User Personas
 
 ### Persona 1 - Maya, a Classmate
 
-Maya is another computer science student who wants to understand Ziyong's background,
-technical interests, and current project experience. She needs a clear site that works
-well on a phone or laptop.
+Maya is another computer science student at Northeastern. She wants to learn about my
+background and see what kinds of projects I have worked on. She usually views class
+projects on her laptop but may also open the site on her phone.
 
-### Persona 2 - Daniel, a Software Recruiter
+### Persona 2 - Daniel, a Recruiter
 
-Daniel reviews student profiles and wants to quickly identify relevant technologies, see
-examples of project work, and find a professional contact method.
+Daniel is a software recruiter who is reviewing student portfolios. He wants to quickly
+find the programming languages and tools I have used, look at a project example, and
+find a professional way to contact me.
 
 ## User Stories
 
-### Story 1 - Learn About the Author
+### User Story 1 - Learn About Me
 
-> As a classmate, I want to read a short personal introduction so that I can understand
-> Ziyong's background and interests.
+> As a classmate, I want to read a short introduction so that I can understand Ziyong's
+> background and interests.
 
-### Story 2 - Review Technical Skills
+### User Story 2 - Find Relevant Skills
 
-> As a recruiter, I want to filter skills by category so that I can quickly find the
-> technologies relevant to a role.
+> As a recruiter, I want to filter the skills by category so that I can quickly find the
+> technologies that are relevant to me.
 
-### Story 3 - Make Contact
+### User Story 3 - Contact Me
 
-> As a potential collaborator, I want to find Ziyong's email and GitHub profile so that
-> I can discuss a project or technical idea.
+> As a visitor who is interested in my work, I want to find an email address, GitHub
+> profile, and LinkedIn profile so that I can contact Ziyong or view more information.
 
-## Original JavaScript Feature
+## JavaScript Feature
 
-The Skills page contains a category filter written in vanilla JavaScript. Visitors can
-show all skill groups or focus on Languages, Frameworks, Data & APIs, AI & LLM, or
-Delivery & Tools. The script updates both the visible cards and the buttons' accessible
-pressed state.
+The Skills page contains the original JavaScript feature. Visitors can select a category
+such as Languages, Frameworks, Data & APIs, AI & LLM, or Delivery & Tools. JavaScript
+then shows only the skill cards in that category. Selecting All displays every card
+again.
+
+The code also updates `aria-pressed` on the filter buttons so that the controls are more
+understandable for assistive technology. The feature uses local HTML data and does not
+call an external API.
 
 ## Design Mockups
 
-### Home
+I sketched each page on paper before organizing the final layouts. The drawings are
+simple, but they helped me decide where the navigation, headings, cards, photograph, and
+contact information should go.
 
-```text
-+------------------------------------------------------+
-| Ziyong Liu                   Home Skills Contact     |
-+------------------------------------------------------+
-| Computer Science Student              +----------+  |
-| Hi, I am Ziyong.                      |    ZL    |  |
-| Short introduction                    +----------+  |
-| [Explore skills] [Contact me]                        |
-+------------------------------------------------------+
-| About me                                            |
-+------------------------------------------------------+
-| Selected project | Selected project | Project       |
-+------------------------------------------------------+
-```
+### Home Page
 
-### Skills
+![Hand-drawn Home page design showing the navigation, introduction, photo, About Me section, and project cards](./images/design-home.jpg)
 
-```text
-+------------------------------------------------------+
-| Ziyong Liu                   Home Skills Contact     |
-+------------------------------------------------------+
-| Skills and tools                                    |
-| [All] [Languages] [Frameworks] [Data] [AI] [Tools]  |
-| +----------------------+ +-------------------------+ |
-| | Skill category       | | Skill category          | |
-| +----------------------+ +-------------------------+ |
-+------------------------------------------------------+
-```
+My Home page sketch starts with my name and the three navigation links. The main section
+places my introduction beside a profile picture. The About Me section comes next, and
+the project cards are placed near the bottom of the page.
 
-### Contact
+### Skills Page
 
-```text
-+------------------------------------------------------+
-| Ziyong Liu                   Home Skills Contact     |
-+------------------------------------------------------+
-| Let us connect                                      |
-| +-------------+ +-------------+ +----------------+  |
-| | Email       | | GitHub      | | Location       |  |
-| +-------------+ +-------------+ +----------------+  |
-| AI assistance disclosure                            |
-+------------------------------------------------------+
-```
+![Hand-drawn Skills page design showing navigation, category buttons, and skill cards](./images/design-skills.jpg)
+
+The Skills page uses the same header as the Home page. Category buttons appear before a
+grid of skill cards. On a smaller screen, the cards move into one column so they are
+still easy to read.
+
+### Contact Page
+
+![Hand-drawn Contact page design showing navigation, contact cards, and an AI disclosure section](./images/design-contact.jpg)
+
+The Contact page is the third, AI-generated page. My original sketch included cards for
+email, GitHub, and location. In the final page, I replaced the location card with my
+LinkedIn profile because it gives visitors a more useful way to connect with me. A short
+AI disclosure appears below the cards, and I chose not to publish my phone number.
+
+## Use of Generative AI
+
+I supplied the personal information, résumé details, and hand-drawn designs used for the
+website. The Home and Skills pages contain the content and features I selected for my
+personal homepage. I used OpenAI Codex to generate the first draft of the Contact page
+and then used a second prompt to review its style, accessibility, and consistency with
+the first two pages.
+
+The complete prompts and my review process are recorded in `README.md`. The final
+website does not contact an AI service while someone is using it.
 
 ## Accessibility and Responsive Design
 
-The site uses landmarks, headings in order, real links and buttons, form-independent
-keyboard controls, visible focus styles, sufficient color contrast, and responsive
-single-column layouts on smaller screens. The author's phone number is intentionally not
-published. All pages will be checked with the W3C Markup Validation Service before final
-submission.
+I used semantic sections, headings in order, standard links and buttons, visible
+keyboard focus styles, and labels that explain interactive controls. The profile picture
+and design images have alternative text. I also used CSS Grid and Flexbox so the
+multi-column layouts can change to one column on smaller screens.
+
+Before submitting the project, I will check all three pages with the W3C Markup
+Validation Service and fix any reported HTML errors.

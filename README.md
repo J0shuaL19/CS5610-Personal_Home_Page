@@ -86,10 +86,11 @@ following two prompts to create and review that page.
 > Create `contact.html` as the third, AI-generated page of my personal homepage. Reuse
 > the header, navigation, footer, typography, colors, spacing, and responsive CSS
 > classes from `index.html` and `skills.html`. Include a short introduction and three
-> contact cards for my Northeastern email address, GitHub profile, and San Jose
-> location. Do not publish my phone number. Use semantic HTML5, standard links,
-> accessible headings, and meaningful metadata. Do not use Bootstrap, jQuery, a backend,
-> additional dependencies, live AI calls, or unnecessary JavaScript.
+> contact cards for my Northeastern email address, GitHub profile, and LinkedIn profile
+> at `https://www.linkedin.com/in/j0shua00/`. Do not publish my phone number. Use
+> semantic HTML5, standard links, accessible headings, and meaningful metadata. Do not
+> use Bootstrap, jQuery, a backend, additional dependencies, live AI calls, or
+> unnecessary JavaScript.
 
 ### Prompt 2 - Review and Match the Existing Website
 
