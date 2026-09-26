@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ziyong Liu" />
+    <meta
+      name="description"
+      content="The personal homepage of Ziyong Liu, a computer science student at Northeastern University."
+    />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Ziyong Liu | Personal Homepage</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-container header-content">
+        <a class="site-name" href="./index.html">Ziyong Liu</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a aria-current="page" href="./index.html">Home</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-container" aria-labelledby="home-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science · Northeastern University</p>
+          <h1 id="home-heading">Hi, I am Ziyong.</h1>
+          <p class="hero-summary">
+            I am a fourth-semester Align MS in Computer Science student who enjoys
+            building practical software and learning how different parts of a system
+            work together.
+          </p>
+          <div class="button-row">
+            <a class="primary-link" href="./skills.html">Explore my skills</a>
+            <a class="secondary-link" href="./contact.html">Contact me</a>
+          </div>
+        </div>
+        <img
+          class="profile-photo"
+          src="./images/profile-photo.png"
+          alt="Portrait of Ziyong Liu"
+        />
+      </section>
+
+      <section class="section page-container" aria-labelledby="about-heading">
+        <div class="section-heading">
+          <p class="eyebrow">About me</p>
+          <h2 id="about-heading">From China to computer science in Silicon Valley</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            I come from China and currently study at Northeastern University's Silicon
+            Valley campus. Through the Align program, I am developing a strong computer
+            science foundation while working on full-stack, mobile, and AI-assisted
+            applications.
+          </p>
+          <p>
+            Outside of coursework and projects, I enjoy playing video games. Games make
+            me curious about interactive systems, problem-solving, and the many
+            technical decisions behind a smooth user experience.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-tinted" aria-labelledby="projects-heading">
+        <div class="page-container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2 id="projects-heading">Projects I have worked on</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-type">Full-stack and desktop</p>
+              <h3>CareerPilot</h3>
+              <p>
+                An AI-powered job search management platform built with Java, Spring
+                Boot, React, TypeScript, PostgreSQL, Tauri, and Rust.
+              </p>
+              <a
+                href="https://github.com/J0shuaL19/CareerPilot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View CareerPilot on GitHub
+              </a>
+            </article>
+            <article class="project-card">
+              <p class="project-type">Web and AI</p>
+              <h3>AI Research Paper Processing Platform</h3>
+              <p>
+                A React and Flask workflow that turns research papers and URLs into
+                structured reports and reusable PDF exports.
+              </p>
+            </article>
+            <article class="project-card">
+              <p class="project-type">Android and AI</p>
+              <h3>AI-Enhanced Notes Application</h3>
+              <p>
+                A local-first Android notes application with Room persistence, search,
+                reminders, and AI-assisted study features.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-container footer-content">
+        <p>Created by Ziyong Liu for CS5610 Web Development.</p>
+        <a href="https://github.com/J0shuaL19">GitHub</a>
+      </div>
+    </footer>
+  </body>
+</html>

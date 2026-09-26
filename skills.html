@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ziyong Liu" />
+    <meta
+      name="description"
+      content="Explore the programming languages, frameworks, data tools, and development skills used by Ziyong Liu."
+    />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Skills | Ziyong Liu</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-container header-content">
+        <a class="site-name" href="./index.html">Ziyong Liu</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a aria-current="page" href="./skills.html">Skills</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-container page-main">
+      <section class="page-introduction" aria-labelledby="skills-heading">
+        <p class="eyebrow">Technical background</p>
+        <h1 id="skills-heading">Skills and tools</h1>
+        <p>
+          My experience spans application development, data systems, AI integrations,
+          and software delivery. Use the buttons to focus on one category.
+        </p>
+      </section>
+
+      <section aria-labelledby="filter-heading">
+        <h2 class="visually-hidden" id="filter-heading">Filter skill categories</h2>
+        <div class="filter-list" role="group" aria-label="Filter skills by category">
+          <button
+            class="filter-button is-active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="languages"
+            aria-pressed="false"
+          >
+            Languages
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="frameworks"
+            aria-pressed="false"
+          >
+            Frameworks
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="data"
+            aria-pressed="false"
+          >
+            Data &amp; APIs
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="ai"
+            aria-pressed="false"
+          >
+            AI &amp; LLM
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="tools"
+            aria-pressed="false"
+          >
+            Delivery &amp; Tools
+          </button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid" aria-live="polite">
+          <article class="skill-card" data-category="languages">
+            <h2>Languages</h2>
+            <ul class="tag-list">
+              <li>Java</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Rust</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-category="frameworks">
+            <h2>Frameworks</h2>
+            <ul class="tag-list">
+              <li>Spring Boot</li>
+              <li>React</li>
+              <li>Vite</li>
+              <li>Tauri</li>
+              <li>Android SDK</li>
+              <li>Flask</li>
+              <li>Room</li>
+              <li>Material Components</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-category="data">
+            <h2>Data &amp; APIs</h2>
+            <ul class="tag-list">
+              <li>PostgreSQL</li>
+              <li>H2</li>
+              <li>SQLite</li>
+              <li>Flyway</li>
+              <li>JPA / Hibernate</li>
+              <li>REST APIs</li>
+              <li>OpenAI Responses API</li>
+              <li>Gemini API</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-category="ai">
+            <h2>AI &amp; LLM</h2>
+            <ul class="tag-list">
+              <li>LLM Integration</li>
+              <li>Prompt Engineering</li>
+              <li>Structured JSON Outputs</li>
+              <li>AI Summarization</li>
+              <li>AI-Assisted Search</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-category="tools">
+            <h2>Architecture &amp; Delivery</h2>
+            <ul class="tag-list">
+              <li>Data Migration</li>
+              <li>Transaction Management</li>
+              <li>Desktop Development</li>
+              <li>CI / CD</li>
+              <li>Docker Compose</li>
+              <li>Nginx</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-category="tools">
+            <h2>Cloud &amp; Tools</h2>
+            <ul class="tag-list">
+              <li>AWS coursework</li>
+              <li>GitHub Actions</li>
+              <li>Git</li>
+              <li>Maven</li>
+              <li>pnpm</li>
+              <li>NSIS</li>
+              <li>WebView2</li>
+              <li>LaTeX</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-container footer-content">
+        <p>Created by Ziyong Liu for CS5610 Web Development.</p>
+        <a href="https://github.com/J0shuaL19">GitHub</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/skills-filter.js"></script>
+  </body>
+</html>

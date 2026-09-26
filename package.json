@@ -1,0 +1,24 @@
+{
+  "name": "ziyong-liu-personal-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://j0shual19.github.io/CS5610-Personal_Home_Page/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/J0shuaL19/CS5610-Personal_Home_Page.git"
+  },
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.0.0"
+  }
+}
