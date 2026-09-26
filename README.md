@@ -1,10 +1,16 @@
 # Ziyong Liu's Personal Homepage
 
 - **Author:** [Ziyong Liu](https://j0shual19.github.io/CS5610-Personal_Home_Page/)
+- **GitHub repository:**
+  [CS5610 Personal Home Page](https://github.com/J0shuaL19/CS5610-Personal_Home_Page)
 - **Class:**
   [CS5610 Web Development, Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 - **Live website:**
   [Ziyong Liu's Personal Homepage](https://j0shual19.github.io/CS5610-Personal_Home_Page/)
+- **Google Slides:**
+  [Project presentation](https://docs.google.com/presentation/d/1jphgcyCpdLQt9hmlEQ-ecWbSuxRrzuOLoqByAgzXHE8/edit?usp=sharing)
+- **Video demonstration:**
+  [Watch on Loom](https://www.loom.com/share/099089dc48ff4b378115ee6b190a53ca)
 
 Hi! I am Ziyong Liu, a fourth-semester Align MS in Computer Science student at
 Northeastern University. I created this website to introduce myself, show some of the
@@ -21,7 +27,7 @@ technical skills, and my public contact information.
 
 ## Screenshot
 
-![Screenshot of the Home page for Ziyong Liu's personal website](./images/project-thumbnail.png)
+![Animated preview of Ziyong Liu's personal website](./images/website-preview.gif)
 
 ## Technologies Used
 
@@ -114,11 +120,6 @@ I reviewed the generated Contact page and checked that it:
 - works with the existing responsive layout;
 - does not add libraries, a backend, or live AI calls; and
 - contains code and content that I understand and can explain.
-
-## Presentation and Video
-
-I will add the public Google Slides and video demonstration links before submitting the
-project.
 
 ## License
 
