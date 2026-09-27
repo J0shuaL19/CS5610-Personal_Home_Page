@@ -1,3 +1,7 @@
+/* This is really great work, my only small critique is that it would be
+   helpful to have some comments or docstrings that help explain what
+   each function does. */
+
 const filterButtons = document.querySelectorAll("[data-filter]");
 const skillCards = document.querySelectorAll("[data-category]");
 
