@@ -1,6 +1,8 @@
 const filterButtons = document.querySelectorAll("[data-filter]");
 const skillCards = document.querySelectorAll("[data-category]");
 
+/* Good job creating a succinct way of filtering which cards are visible.
+   I did not know about the hidden attribute of all HTML elements. */
 function filterSkills(selectedCategory) {
   skillCards.forEach((card) => {
     const shouldShow =
