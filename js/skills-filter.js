@@ -9,6 +9,8 @@ function filterSkills(selectedCategory) {
   });
 }
 
+/* Good job not only updating the visual styling when a button
+   is clicked, but also the aria attribute for accessibility. */
 function updateActiveButton(selectedButton) {
   filterButtons.forEach((button) => {
     const isSelected = button === selectedButton;
