@@ -1,6 +1,12 @@
+/* This is really great work, my only small critique is that it would be
+   helpful to have some comments or docstrings that help explain what
+   each function does. */
+
 const filterButtons = document.querySelectorAll("[data-filter]");
 const skillCards = document.querySelectorAll("[data-category]");
 
+/* Good job creating a succinct way of filtering which cards are visible.
+   I did not know about the hidden attribute of all HTML elements. */
 function filterSkills(selectedCategory) {
   skillCards.forEach((card) => {
     const shouldShow =
@@ -9,6 +15,8 @@ function filterSkills(selectedCategory) {
   });
 }
 
+/* Good job not only updating the visual styling when a button
+   is clicked, but also the aria attribute for accessibility. */
 function updateActiveButton(selectedButton) {
   filterButtons.forEach((button) => {
     const isSelected = button === selectedButton;
